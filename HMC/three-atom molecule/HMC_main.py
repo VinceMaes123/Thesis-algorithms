@@ -36,7 +36,7 @@ rcs = scipy.zeros(N) #initial r_c is not saved in rcs
 xcs = scipy.zeros(N) #initial x_c is not saved in xcs
 ycs = scipy.zeros(N) #initial y_c is not saved in ycs
 
-for n in range(0,N): #exectue loop N times
+for n in range(0,N): #execute loop N times
     q = HMC.HMC_Stepper(epsilon,L,q)
     eta[n] = UDE.restriction(q)
     xas[n] = q[0]

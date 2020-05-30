@@ -32,10 +32,10 @@ N = int(1e6)
 #HMC METHOD
 #initialize micro state
 print("starting HMC method...")
-q0s = scipy.zeros(N) #initial eta is not saved in q0s
-q1s = scipy.zeros(N) #initial x_a is not saved in q1s
+q0s = scipy.zeros(N) #initial q0 is not saved in q0s
+q1s = scipy.zeros(N) #initial q1 is not saved in q1s
 
-for n in range(0,N): #exectue loop N times
+for n in range(0,N): #execute loop N times
     q = HMC.HMC_Stepper(epsilon,L,q)
     q0s[n] = q[0]
     q1s[n] = q[1]

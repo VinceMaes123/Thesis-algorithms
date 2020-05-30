@@ -45,7 +45,7 @@ CNC2 = scipy.zeros(N)
 phi = scipy.zeros(N)
 psi = scipy.zeros(N)
 
-for n in range(0,N): #exectue loop N times
+for n in range(0,N): #execute loop N times
     q = HMC.HMC_Stepper(epsilon,L,q)
     CC1[n] = q[0]
     CC2[n] = q[1]

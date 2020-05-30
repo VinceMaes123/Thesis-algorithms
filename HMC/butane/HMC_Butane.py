@@ -36,7 +36,7 @@ BA1 = scipy.zeros(N) #Bond angles
 BA2 = scipy.zeros(N)
 TA = scipy.zeros(N) #Torsion angle
 
-for n in range(0,N): #exectue loop N times
+for n in range(0,N): #execute loop N times
     q = HMC.HMC_Stepper(epsilon,L,q)
     BL1[n] = q[0]
     BL2[n] = q[1]
