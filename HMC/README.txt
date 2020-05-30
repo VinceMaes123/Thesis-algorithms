@@ -5,7 +5,8 @@ Each subfolder contains the implementation for one of the examples and contains:
 1) An executable file
 --------------------------------------------------------------------------------------------
   -> "HMC_main.py" for the HMC method applied to the three-atom molecule.
-  -> "HMC_TestCase.py" for the HMC method applied to the test case (simple bivariate Gaussian density)
+  -> "HMC_TestCase.py" for the HMC method applied to the test case 
+     (simple bivariate Gaussian density).
   -> "HMC_Butane.py" for the HMC method applied to the main chain of butane.
   -> "HMC_AlanineDipeptide.py" for the HMC method applied to the main chain of
      alanine-dipeptide.
